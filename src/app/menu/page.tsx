@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MenuExplorer from "@/components/MenuExplorer";
 
 export default function MenuPage() {
   return (
@@ -9,11 +10,7 @@ export default function MenuPage() {
         Filter by category. Pork-free by default; pork available upon request.
       </p>
 
-      <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6">
-        <p className="text-white/70">
-          Next step: we’ll drop in the dynamic Menu Explorer with filters (Soul / Seafood / Healthy / Vegan).
-        </p>
-      </div>
+      <MenuExplorer />
     </div>
   );
 }
